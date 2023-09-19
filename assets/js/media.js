@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const youtubePlayer = document.getElementById('youtubePlayer');
-    const apiKey = 'AIzaSyCrVyNj3xtxbHuCD9yKTnbODguLfWJsauY#####';
+    const apiKey = 'AIzaSyCrVyNj3xtxbHuCD9yKTnbODguLfWJsauY';
     // Get video ID from the URL query parameter
     const urlParams = new URLSearchParams(window.location.search);
     const videoID = urlParams.get('id'); // assuming the parameter name is 'id'
