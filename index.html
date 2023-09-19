@@ -121,12 +121,42 @@
 						<div class="inner">
 							<h2>Get in touch</h2>
 							<div class="split style1">
-								<section>
+								<!-- <section>
 									<div class="player-container">
 										<iframe src="videos/vid01.mp4" frameborder="0" 
 												allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" >
 										</iframe>
 									</div>
+								</section> -->
+								<section>
+									<form name="contact" netlify>
+									<!-- <p>
+									  <label>Name <input type="text" name="name" /></label>
+									</p>
+									<p>
+									  <label>Email <input type="email" name="email" /></label>
+									</p>
+									<p>
+									  <button type="submit">Send</button>
+									</p> -->
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="5"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><a href="" class="button submit">Send Message</a></li>
+									</ul>
+								  </form>
 								</section>
 								<section>
 									<ul class="contact">
