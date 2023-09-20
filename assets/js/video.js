@@ -1,16 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const youtubePlayer = document.getElementById('youtubePlayer');
-    const apiKey = 'AIzaSyCrVyNj3xtxbHuCD9yKTnbODguLfWJsauY';
     // Get video ID from the URL query parameter
     const urlParams = new URLSearchParams(window.location.search);
-    const videoID = urlParams.get('id'); // assuming the parameter name is 'id'
+    const videoID = urlParams.get('id');
+
+    const youtubePlayer = document.getElementById('youtubePlayer');
     
-    // If a videoID exists, embed the YouTube video, else show an error or default message
     if(videoID) {
         youtubePlayer.src = `https://www.youtube.com/embed/${videoID}`;
-        fetchVideoDetails(videoID, apiKey);
-
-
+        fetchVideoDetails(videoID);
     } else {
         youtubePlayer.outerHTML = '<p>Please provide a valid videoID in the query parameters.</p>';
     }
@@ -21,8 +18,8 @@ window.addEventListener("load", function() {
     loadingScreen.style.display = "none";
 });
 
-function fetchVideoDetails(videoId, apiKey) {
-
+function fetchVideoDetails(videoId) {
+    const apiKey = 'AIzaSyCrVyNj3xtxbHuCD9yKTnbODguLfWJsauY';
     const endpoint = `https://www.googleapis.com/youtube/v3/videos?id=${videoId}&key=${apiKey}&part=snippet`;
     const videoTitle = document.getElementById('videoTitle');
     const videoDescription = document.getElementById('videoDescription');

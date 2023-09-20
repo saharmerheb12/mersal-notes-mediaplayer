@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>You've got a message</title>
+        <link rel="stylesheet" href="assets/css/main.css">
+        <script src="assets/js/fontawesome.js"></script>
+    </head>
+    <body class="is-preload">
+        <style>
+            #header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            #header img {
+                max-width: 100px;
+            }
+        </style>
+        <!-- Header -->		
+        <header id="header">
+            <nav>
+                <a href="index.html" class="title">Mersal</a>
+            </nav>
+            <img src="assets/logo/mersallogo.png" width="50px" alt="Mersal Logo">
+        </header>
+        <div class="music-player">
+            <img  class="voice-note-img" id="voiceNoteImage">
+            <!-- <h1>Title</h1>
+            <p>note..</p> -->
+            <audio id="voiceNotePlayer">
+                <source  type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">  
+                <div id="divCtrl"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+            </div>
+        </div>
+        <footer id="footer" class="wrapper alt">
+            <div class="inner">
+                <ul class="menu">
+                    <li>&copy; Mersallb.<a href="https://mersallb.com"></a> All rights reserved.</li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="https://Instagram.com/mersallb" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="https://facebook.com/mersallb" class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://www.tiktok.com/@mersallb" class="icon brands fa-tiktok"><span class="label">Tiktok</span></a></li>		
+                </ul>
+            </div>
+        </footer>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/audio.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
