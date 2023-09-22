@@ -7,8 +7,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const voiceNoteImage = document.getElementById('voiceNoteImage');
 
     if(voiceNoteID) {
-        voiceNotePlayer.src = `notes/${voiceNoteID}.mp3`;
-        voiceNoteImage.src = `notes/${voiceNoteID}.jpg`;
+        // voiceNotePlayer.src = `notes/${voiceNoteID}.mp3`;
+        // voiceNoteImage.src = `notes/${voiceNoteID}.jpg`;
+        voiceNotePlayer.src = `https://users-notes-bucket.s3.amazonaws.com/${voiceNoteID}.mp3`;
+        voiceNoteImage.src = `https://users-notes-bucket.s3.amazonaws.com/${voiceNoteID}.png`;
+
         initControl(voiceNotePlayer);
     } else {
         youtubePlayer.outerHTML = '<p>Please provide a valid voice note id in the query parameters.</p>';
