@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // voiceNotePlayer.src = `notes/${voiceNoteID}.mp3`;
         // voiceNoteImage.src = `notes/${voiceNoteID}.jpg`;
         voiceNotePlayer.src = `https://users-notes-bucket.s3.amazonaws.com/${voiceNoteID}.mp3`;
-        voiceNoteImage.src = `https://users-notes-bucket.s3.amazonaws.com/${voiceNoteID}.png`;
+        voiceNoteImage.src = `https://users-notes-bucket.s3.amazonaws.com/${voiceNoteID}.jpg`;
 
         initControl(voiceNotePlayer);
     } else {
