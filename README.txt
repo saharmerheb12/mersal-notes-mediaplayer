@@ -1,5 +1,6 @@
 Mersal Shop Portal
 Mersal Notes Media Player (audio and video)
+Refer to mersal-notes-manager for more details
 
 Credits:
 	Template:
