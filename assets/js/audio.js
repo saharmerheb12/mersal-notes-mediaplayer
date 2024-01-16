@@ -5,12 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const voiceNotePlayer = document.getElementById('voiceNotePlayer');
     const voiceNoteImage = document.getElementById('voiceNoteImage');
-
+    const storageAddress= 'xxx'
     if(voiceNoteID) {
         // voiceNotePlayer.src = `notes/${voiceNoteID}.mp3`;
         // voiceNoteImage.src = `notes/${voiceNoteID}.jpg`;
-        voiceNotePlayer.src = `https://users-notes-bucket.s3.us-east-1.amazonaws.com/${voiceNoteID}.mp3`;
-        voiceNoteImage.src = `https://users-notes-bucket.s3.us-east-1.amazonaws.com/${voiceNoteID}.jpg`;
+        voiceNotePlayer.src = `https://${storageAddress}/${voiceNoteID}.mp3`;
+        voiceNoteImage.src = `https://${storageAddress}/${voiceNoteID}.jpg`;
 
         initControl(voiceNotePlayer);
     } else {
