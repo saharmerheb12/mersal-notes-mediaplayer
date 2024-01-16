@@ -19,7 +19,7 @@ window.addEventListener("load", function() {
 });
 
 function fetchVideoDetails(videoId) {
-    const apiKey = 'AIzaSyCrVyNj3xtxbHuCD9yKTnbODguLfWJsauY';
+    const apiKey = 'xxx';
     const endpoint = `https://www.googleapis.com/youtube/v3/videos?id=${videoId}&key=${apiKey}&part=snippet`;
     const videoTitle = document.getElementById('videoTitle');
     const videoDescription = document.getElementById('videoDescription');
